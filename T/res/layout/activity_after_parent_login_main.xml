@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AfterPArentLoginMainActivity" >
+
+    <Button
+        android:id="@+id/buttonAPShowAcademics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="15dp"
+        android:text="Show Academics Progress" />
+
+    <Button
+        android:id="@+id/buttonAPShowExtProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonAPShowAcademics"
+        android:layout_below="@+id/buttonAPShowAcademics"
+        android:text="Show Extracarricular Progress" />
+
+    <Button
+        android:id="@+id/buttonAPLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonAPShowExtProgress"
+        android:layout_below="@+id/buttonAPShowExtProgress"
+        android:text="Logout" />
+
+</RelativeLayout>

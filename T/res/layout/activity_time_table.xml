@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".TimeTableActivity" >
+
+    <TextView
+        android:id="@+id/textViewAEtimetable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Exam Time Table ID"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextETTID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewAEtimetable"
+        android:layout_toRightOf="@+id/textViewAEtimetable"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textViewAEDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewAEtimetable"
+        android:layout_below="@+id/editTextETTID"
+        android:text="Date"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextAEDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewAEDate"
+        android:layout_marginLeft="68dp"
+        android:layout_toRightOf="@+id/textViewAEDate"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewAESubjectID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewAEDate"
+        android:layout_below="@+id/editTextAEDate"
+        android:text="Subject ID"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextAESubjectID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextAEDate"
+        android:layout_alignTop="@+id/textViewAESubjectID"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textViewAETime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTextAESubjectID"
+        android:text="Time"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextAETime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextAESubjectID"
+        android:layout_below="@+id/editTextAESubjectID"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textViewAECDID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewAETime"
+        android:layout_below="@+id/editTextAETime"
+        android:text="CD ID"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextAECDID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextAETime"
+        android:layout_alignTop="@+id/textViewAECDID"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textViewAETestType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTextAECDID"
+        android:text="Test Type"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextAETestType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextAECDID"
+        android:layout_alignTop="@+id/textViewAETestType"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/buttonAESubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewAETestType"
+        android:layout_below="@+id/editTextAETestType"
+        android:layout_marginTop="18dp"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/buttonAECancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonAEReset"
+        android:layout_alignBottom="@+id/buttonAEReset"
+        android:layout_alignRight="@+id/editTextAETestType"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/buttonAEReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonAESubmit"
+        android:layout_alignBottom="@+id/buttonAESubmit"
+        android:layout_centerHorizontal="true"
+        android:text="Reset" />
+
+</RelativeLayout>

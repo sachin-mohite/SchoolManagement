@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ACalenderActivity" >
+
+    <TextView
+        android:id="@+id/textViewAEventID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Event ID"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextAEventID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewAEventID"
+        android:layout_toRightOf="@+id/textViewAEventID"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textViewAEventName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTextAEventID"
+        android:text="Event Name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextETTID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewAEventName"
+        android:layout_alignBottom="@+id/textViewAEventName"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/textViewAEventName"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewAType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewAEventName"
+        android:layout_below="@+id/editTextETTID"
+        android:layout_marginTop="14dp"
+        android:layout_toLeftOf="@+id/editTextETTID"
+        android:text="Type"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextAType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextETTID"
+        android:layout_below="@+id/editTextETTID"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/editTextADate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextAType"
+        android:layout_alignTop="@+id/textViewADate"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textViewATime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTextADate"
+        android:text="Time"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextATime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewATime"
+        android:layout_alignBottom="@+id/textViewATime"
+        android:layout_alignLeft="@+id/editTextADate"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textViewADate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textViewATime"
+        android:layout_below="@+id/editTextAType"
+        android:text="Date"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewACDID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewADate"
+        android:layout_alignRight="@+id/textViewAEventID"
+        android:layout_below="@+id/editTextATime"
+        android:layout_marginTop="15dp"
+        android:text="CD ID"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextACDID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextATime"
+        android:layout_below="@+id/editTextATime"
+        android:ems="10" />
+
+    <CheckBox
+        android:id="@+id/checkBoxHoliday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewACDID"
+        android:layout_centerVertical="true"
+        android:text="Holiday Or Not ?" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewATime"
+        android:layout_below="@+id/checkBoxHoliday"
+        android:layout_marginTop="20dp"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/buttonCanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonReset"
+        android:layout_alignBottom="@+id/buttonReset"
+        android:layout_alignRight="@+id/editTextAEventID"
+        android:layout_marginRight="14dp"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonSubmit"
+        android:layout_alignBottom="@+id/buttonSubmit"
+        android:layout_alignLeft="@+id/editTextACDID"
+        android:text="Reset" />
+
+</RelativeLayout>

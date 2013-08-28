@@ -1,0 +1,173 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".StudentEntryActivity" >
+
+    <TextView
+        android:id="@+id/textViewStudPRN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Student PRN"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextStudPRN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewStudPRN"
+        android:layout_alignTop="@+id/textViewStudPRN"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/textViewStudPRN"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewStudFname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewStudPRN"
+        android:layout_below="@+id/textViewStudPRN"
+        android:text="First Name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextStudFname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewStudFname"
+        android:layout_alignLeft="@+id/editTextStudPRN"
+        android:layout_alignTop="@+id/textViewStudFname"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textViewStudMname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewStudFname"
+        android:layout_toLeftOf="@+id/editTextStudFname"
+        android:text="Middle Name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextStudMname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewStudMname"
+        android:layout_alignLeft="@+id/editTextStudFname"
+        android:layout_alignTop="@+id/textViewStudMname"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textViewStudLname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewStudMname"
+        android:layout_below="@+id/textViewStudMname"
+        android:text="Last Name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextStudLname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewStudLname"
+        android:layout_alignLeft="@+id/editTextStudMname"
+        android:layout_alignTop="@+id/textViewStudLname"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textViewStudBday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewStudLname"
+        android:layout_below="@+id/textViewStudLname"
+        android:text="Birth Date"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <DatePicker
+        android:id="@+id/datePicker1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewStudBday"
+        android:layout_alignBottom="@+id/textViewStudBday"
+        android:layout_toRightOf="@+id/textViewStudMname" />
+
+    <TextView
+        android:id="@+id/textViewStudMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewStudBday"
+        android:layout_below="@+id/textViewStudBday"
+        android:text="Email ID"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextStudEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewStudMail"
+        android:layout_alignTop="@+id/textViewStudMail"
+        android:layout_toRightOf="@+id/textViewStudMname"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/textViewStudPid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewStudMail"
+        android:text="Parent ID"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextStudPid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewStudPid"
+        android:layout_below="@+id/editTextStudEmail"
+        android:layout_toRightOf="@+id/textViewStudMname"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/buttonASSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewStudPid"
+        android:layout_alignRight="@+id/textViewStudFname"
+        android:layout_below="@+id/textViewStudPid"
+        android:layout_marginTop="22dp"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/buttonASReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonASSubmit"
+        android:layout_alignBottom="@+id/buttonASSubmit"
+        android:layout_toRightOf="@+id/textViewStudPRN"
+        android:text="Reset" />
+
+    <Button
+        android:id="@+id/buttonASCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonASReset"
+        android:layout_alignBottom="@+id/buttonASReset"
+        android:layout_alignRight="@+id/editTextStudPid"
+        android:layout_toRightOf="@+id/datePicker1"
+        android:text="Cancel" />
+
+</RelativeLayout>

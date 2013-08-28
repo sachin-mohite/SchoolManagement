@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ReportActivity" >
+
+    <TextView
+        android:id="@+id/textViewRStandard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Standard"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextRStandard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewRStandard"
+        android:layout_toRightOf="@+id/textViewRStandard"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewRDivision"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTextRStandard"
+        android:text="Division"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextRDivision"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextRStandard"
+        android:layout_below="@+id/editTextRStandard"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/buttonRSelectStudent"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewRDivision"
+        android:layout_below="@+id/editTextRDivision"
+        android:text="Select Student" />
+
+    <Button
+        android:id="@+id/buttonRCancel"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonRReset"
+        android:layout_alignBottom="@+id/buttonRReset"
+        android:layout_alignRight="@+id/editTextRDivision"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/buttonRReset"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonRSelectStudent"
+        android:layout_alignBottom="@+id/buttonRSelectStudent"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/buttonRSelectStudent"
+        android:text="Reset" />
+
+    <Button
+        android:id="@+id/buttonRShowReport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/buttonRSelectStudent"
+        android:text="Show Report" />
+
+</RelativeLayout>

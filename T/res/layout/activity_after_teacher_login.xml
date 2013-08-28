@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AfterTeacherLoginActivity" >
+
+    <Button
+        android:id="@+id/buttonAddSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Add  Subject" />
+
+    <Button
+        android:id="@+id/buttonTTimetable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/buttonAddSubject"
+        android:text="Time Table" />
+
+    <Button
+        android:id="@+id/buttonTAddendence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonTTimetable"
+        android:layout_below="@+id/buttonTTimetable"
+        android:text="Addendence" />
+
+    <Button
+        android:id="@+id/buttonTAssignment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonTAddendence"
+        android:layout_below="@+id/buttonTAddendence"
+        android:text="Assignment" />
+
+    <Button
+        android:id="@+id/buttonTAlarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="Alarm" />
+
+    <Button
+        android:id="@+id/buttonATExam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/buttonTAlarm"
+        android:text="Exam" />
+
+    <Button
+        android:id="@+id/buttonATReport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonATExam"
+        android:layout_below="@+id/buttonATExam"
+        android:text="Report" />
+
+</RelativeLayout>

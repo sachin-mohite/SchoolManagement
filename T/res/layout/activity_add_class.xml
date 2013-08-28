@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="right"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AddClassActivity" >
+
+    <TextView
+        android:id="@+id/textViewClsID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Class ID"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextClsID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewClsID"
+        android:layout_toRightOf="@+id/textViewClsName"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewClsName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTextClsID"
+        android:text="Class Name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextClsName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextClsID"
+        android:layout_alignTop="@+id/textViewClsName"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/buttonDivSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextClsName"
+        android:layout_marginTop="19dp"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/buttonDivCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonDivReset"
+        android:layout_alignBottom="@+id/buttonDivReset"
+        android:layout_marginLeft="22dp"
+        android:layout_toRightOf="@+id/buttonDivReset"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/buttonDivReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonDivSubmit"
+        android:layout_alignBottom="@+id/buttonDivSubmit"
+        android:layout_toRightOf="@+id/textViewClsName"
+        android:text="Reset" />
+
+</RelativeLayout>

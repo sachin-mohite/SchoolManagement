@@ -1,0 +1,221 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SchoolEntryActivity" >
+
+    <TextView
+        android:id="@+id/textViewSchoolId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="School ID"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/editTextSchId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewSchoolId"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textViewSchoolId"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textViewSchName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewSchoolId"
+        android:text="School Name"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/editTextSchName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewSchName"
+        android:layout_below="@+id/editTextSchId"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/textViewSchName"
+        android:ems="10"
+        android:inputType="textMultiLine" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewSchLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewSchName"
+        android:layout_below="@+id/textViewSchName"
+        android:text="Location"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/editTextSchLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewSchLocation"
+        android:layout_alignTop="@+id/textViewSchLocation"
+        android:layout_toRightOf="@+id/textViewSchName"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textViewSchUniversity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewSchLocation"
+        android:layout_below="@+id/textViewSchLocation"
+        android:text="University"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/editTextSchUniversity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewSchUniversity"
+        android:layout_alignTop="@+id/textViewSchUniversity"
+        android:layout_toRightOf="@+id/textViewSchName"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textViewSchCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewSchUniversity"
+        android:layout_below="@+id/textViewSchUniversity"
+        android:text="School Code"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/editTextSchCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewSchCode"
+        android:layout_alignLeft="@+id/editTextSchUniversity"
+        android:layout_alignTop="@+id/textViewSchCode"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textViewSchContactNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewSchCode"
+        android:layout_below="@+id/textViewSchCode"
+        android:text="Contact Number"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/editTextSchContactno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewSchContactNo"
+        android:layout_alignTop="@+id/textViewSchContactNo"
+        android:layout_marginLeft="17dp"
+        android:layout_toRightOf="@+id/textViewSchContactNo"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/textViewSchFaxno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewSchContactNo"
+        android:layout_below="@+id/textViewSchContactNo"
+        android:text="Fax number"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/editTextSchFaxno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewSchFaxno"
+        android:layout_alignLeft="@+id/editTextSchCode"
+        android:layout_alignTop="@+id/textViewSchFaxno"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textViewSchEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewSchFaxno"
+        android:layout_below="@+id/textViewSchFaxno"
+        android:text="Email ID"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/editTextSchEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewSchEmail"
+        android:layout_alignTop="@+id/textViewSchEmail"
+        android:layout_toRightOf="@+id/textViewSchUniversity"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/textViewSchWebsite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewSchEmail"
+        android:layout_below="@+id/textViewSchEmail"
+        android:text="Website"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/editTextSchWebsite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewSchWebsite"
+        android:layout_alignTop="@+id/textViewSchWebsite"
+        android:layout_toRightOf="@+id/textViewSchoolId"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/buttonSchCancel"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonSchReset"
+        android:layout_alignBottom="@+id/buttonSchReset"
+        android:layout_alignRight="@+id/editTextSchWebsite"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/buttonSchAdmin"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewSchWebsite"
+        android:layout_centerVertical="true"
+        android:text="Create Admin" />
+
+    <Button
+        android:id="@+id/buttonSchReset"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextSchContactno"
+        android:layout_centerVertical="true"
+        android:text="Reset" />
+
+    <Button
+        android:id="@+id/buttonSchSubmit"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/buttonSchAdmin"
+        android:text="Submit School" />
+
+</RelativeLayout>
